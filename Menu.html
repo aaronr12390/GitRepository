@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <link href="restaurantStyles.css" rel="stylesheet" />
+</head>
+<header>
+    <h1>A Cafe</h1>
+</header>
+<body>
+
+
+    <style>
+        ul > li {
+            display: inline-block;
+            /* You can also add some margins here to make it look prettier */
+            zoom: 1;
+            *display: inline;
+            /* this fix is needed for IE7- */
+        }
+
+        #nav li a {
+            color: #C60;
+            color: #FFFFFF;
+            text-decoration: none;
+            display: block;
+        }
+
+            #nav li a:visited {
+                
+                color: purple;
+                text-decoration: none;
+            }
+
+            #nav li a:hover {
+             font-weight:bold;
+            }
+        .column {
+            float: left;
+            width: 33%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        div {
+            text-align: center
+        }
+
+        span {
+            font-size: x-large
+        }
+
+        #wrapper {
+            background-color: aqua
+        }
+
+
+        #beverages {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #beverages td, #customers th {
+                border: 1px solid #808080;
+                padding: 1px;
+            }
+
+            #beverages tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+        #custbeveragesomers tr:hover {
+            background-color: #ddd;
+        }
+
+        #beverages th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+    <hr />
+    <ul id="nav">
+        <li><a href="Restaurant.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+            
+            
+            
+    </ul>
+    <hr />
+
+    <div id="wrapper">
+        <div class="row">
+            <div class="column">
+                <span>Coffee - Black</span><br />
+                Black Foldgers, brewed on request.<br />
+                $2.50
+            </div>
+            <div class="column">
+                <span>Espresso</span><br />
+                Its like Black Coffee, but spaner.<br />
+                $4.50 <br />
+                (Extra Shot: .50 each)
+            </div>
+            <div class="column">
+                <span>Vanilla Latte</span><br />
+                Different end of the spectrum from the rest of our drinks.  Vanilla Latte is a refreshing drink that will still get you going!<br />
+                $6.50
+            </div>
+        </div>
+        <p></p>
+        <div class="row">
+            <div class="column">
+                <span>Scone</span><br />
+                Have a tasty scone with your drink<br />
+                $3.00
+            </div>
+            <div class="column">
+                <span>Croissant</span><br />
+                Sweet crossiant pastry w/ honey butter<br />
+                $5.50
+            </div>
+            <div class="column">
+                <span>Blueberry Muffin</span><br />
+                Our world famous Blueberry Mini Muffins! 6 to an order.<br />
+                Limit 12 orders per customer<br />
+                $2.50 / order
+            </div>
+        </div>
+        <div style="width:50%;margin:auto">
+            <table id="beverages">
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <p><strong>Beverages</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Root Beer</p>
+                        </td>
+                        <td>
+                            <p>$3.00</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Bottled Water</p>
+                        </td>
+                        <td>
+                            <p>$1.25</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Lemonade</p>
+                        </td>
+                        <td>
+                            <p>$1.00</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Iced Tea</p>
+                        </td>
+                        <td>
+                            <p>$1.25</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<hr />
+<footer>
+    <div>
+        1234 Main St, Louisville, KY, 56851
+        <p>502-555-1234</p>
+    </div>
+</footer>
+</html>

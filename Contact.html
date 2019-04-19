@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cotact Us</title>
+    <link href="restaurantStyles.css" rel="stylesheet" />
+</head>
+
+<header>
+    <h1>A Cafe</h1>
+</header>
+
+<body>
+    <hr />
+    <ul id="nav">
+        <li><a href="Restaurant.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+
+
+
+    </ul>
+    <hr />
+    <style>
+        input {
+            margin-bottom: 10px
+        }
+
+        select {
+            margin-bottom: 10px
+        }
+
+        textarea {
+            margin-bottom: 10px
+        }
+    </style>
+    <div style="text-align:center;  width:50%;margin:auto ">
+        <table style="margin-left:auto; margin-right:auto">
+            <tr>
+                <td style="font-weight:bold"> Name </td>
+                <td> <input type="text" name="Name" required /> </td>
+            </tr>
+            <tr>
+                <td style="font-weight:bold"> Email </td>
+                <td> <input type="text" name="Email" required /> </td>
+            </tr>
+            <tr>
+                <td style="font-weight:bold"> Phone </td>
+                <td> <input type="text" name="Phone" required /> </td>
+            </tr>
+            <tr>
+                <td> Reason for Inquiry: </td>
+                <td>
+                    <select name="Reason for Inquiry" style="width:100%">
+                        <option value="Catering">Catering</option>
+                        <option value="Private Party">Private Party</option>
+                        <option value="Feedback">Feedback</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+
+
+        </table>
+
+        Additional Information:
+        <textarea name="Additional Info" style="width:36%"></textarea><br />
+
+    </div>
+    <div style="text-align:center">
+        Have you been to the restaurant?
+        <input type="radio" name="answer" value="YES" checked />YES
+        <input type="radio" name="answer" value="NO" checked />NO<br />
+
+        Best days to contact you:
+        <input type="checkbox" name="myChoices" value="M" />M
+        <input type="checkbox" name="myChoices" value="T" />T
+        <input type="checkbox" name="myChoices" value="W" />W
+        <input type="checkbox" name="myChoices" value="TH" />TH
+        <input type="checkbox" name="myChoices" value="F" />F<br />
+
+        <input type="submit" /><br />
+    </div>
+</body>
+<hr />
+
+<footer>
+  <div style="text-align:center">
+    1234 Main St, Louisville, KY, 56851
+    <p>502-555-1234</p>
+  </div>
+</footer>
+</html>
