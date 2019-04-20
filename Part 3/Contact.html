@@ -1,23 +1,59 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Cotact Us</title>
-    <link href="restaurantStyles.css" rel="stylesheet" />
-</head>
-
 <header>
     <h1>A Cafe</h1>
 </header>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link href="restaurantStyles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function validateForm() {
+
+            var error = "";
+
+            if (document.getElementById("txtName").value == "") {
+                error = error + "Name is blank....";
+            }
+
+            if (document.getElementById("txtEmail").value == "") {
+                error = error + "Email is blank....";
+            }
+
+            if (document.getElementById("txtPhone").value == "") {
+                error = error + "Phone is blank....";
+            }
+
+            if (error == "") {
+                alert("Info Submitted");
+            } else {
+
+                alert(error);
+            }
+        }
+    </script>
+
+</head>
+
+
 
 <body>
     <hr />
-    <ul id="nav">
-        <li><a href="Restaurant.html">Home</a></li>
+    <noscript>
+        This site is best viewed with Javascript Enabled
+    </noscript>
+    <ul class="nav nav-pills">
+
+        <li>
+            <a href="Restaurant.html">
+                <span class="glyphicon glyphicon-home"></span>
+            </a>
+        </li>
         <li><a href="Menu.html">Menu</a></li>
         <li><a href="Contact.html">Contact Us</a></li>
-
-
-
     </ul>
     <hr />
     <style>
@@ -33,61 +69,63 @@
             margin-bottom: 10px
         }
     </style>
-    <div style="text-align:center;  width:50%;margin:auto ">
-        <table style="margin-left:auto; margin-right:auto">
-            <tr>
-                <td style="font-weight:bold"> Name </td>
-                <td> <input type="text" name="Name" required /> </td>
-            </tr>
-            <tr>
-                <td style="font-weight:bold"> Email </td>
-                <td> <input type="text" name="Email" required /> </td>
-            </tr>
-            <tr>
-                <td style="font-weight:bold"> Phone </td>
-                <td> <input type="text" name="Phone" required /> </td>
-            </tr>
-            <tr>
-                <td> Reason for Inquiry: </td>
-                <td>
-                    <select name="Reason for Inquiry" style="width:100%">
-                        <option value="Catering">Catering</option>
-                        <option value="Private Party">Private Party</option>
-                        <option value="Feedback">Feedback</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </td>
-            </tr>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-12">
+                <div style="text-align:center;  width:50%;margin:auto ">
+                    <table style="margin-left:auto; margin-right:auto">
+                        <tr>
+                            <td style="font-weight:bold"> Name </td>
+                            <td> <input type="text" name="Name" id="txtName" required /> </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold"> Email </td>
+                            <td> <input type="text" name="Email" id="txtEmail" required /> </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:bold"> Phone </td>
+                            <td> <input type="text" name="Phone" id="txtPhone" required /> </td>
+                        </tr>
+                        <tr>
+                            <td> Reason for Inquiry: </td>
+                            <td>
+                                <select name="Reason for Inquiry" style="width:100%">
+                                    <option value="Catering">Catering</option>
+                                    <option value="Private Party">Private Party</option>
+                                    <option value="Feedback">Feedback</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    Additional Information:
+                    <textarea name="Additional Info" style="width:36%"></textarea><br />
 
+                </div>
+                <div style="text-align:center">
+                    Have you been to the restaurant?
+                    <input type="radio" name="answer" value="YES" checked />YES
+                    <input type="radio" name="answer" value="NO" checked />NO<br />
 
+                    Best days to contact you:
+                    <input type="checkbox" name="myChoices" value="M" />M
+                    <input type="checkbox" name="myChoices" value="T" />T
+                    <input type="checkbox" name="myChoices" value="W" />W
+                    <input type="checkbox" name="myChoices" value="TH" />TH
+                    <input type="checkbox" name="myChoices" value="F" />F<br />
 
-        </table>
-
-        Additional Information:
-        <textarea name="Additional Info" style="width:36%"></textarea><br />
-
-    </div>
-    <div style="text-align:center">
-        Have you been to the restaurant?
-        <input type="radio" name="answer" value="YES" checked />YES
-        <input type="radio" name="answer" value="NO" checked />NO<br />
-
-        Best days to contact you:
-        <input type="checkbox" name="myChoices" value="M" />M
-        <input type="checkbox" name="myChoices" value="T" />T
-        <input type="checkbox" name="myChoices" value="W" />W
-        <input type="checkbox" name="myChoices" value="TH" />TH
-        <input type="checkbox" name="myChoices" value="F" />F<br />
-
-        <input type="submit" /><br />
+                    <input type="button" id="bntSave" value="Submit" onclick="validateForm();" /><br />
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <hr />
-
-<footer>
-  <div style="text-align:center">
-    1234 Main St, Louisville, KY, 56851
-    <p>502-555-1234</p>
-  </div>
-</footer>
 </html>
+<footer>
+    <div style="text-align:center">
+        1234 Main St, Louisville, KY, 56851
+        <p>502-555-1234</p>
+    </div>
+</footer>
+
