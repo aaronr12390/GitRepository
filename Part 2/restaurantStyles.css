@@ -1,0 +1,35 @@
+header {
+    text-align:center;
+    font:arial
+}
+
+#rwrapper {
+    background-color:darkkhaki
+}
+
+footer div {
+    text-align: center
+}
+
+
+ul > li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+#nav li a {
+    color: #C60;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+}
+
+    #nav li a:visited {
+        color: purple;
+        text-decoration: none;
+    }
+
+    #nav li a:hover {
+        font-weight: bold;
+    }
